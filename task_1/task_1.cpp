@@ -11,9 +11,9 @@ void printVector(const std::vector<T> &_vec)
 }
 
 template <class T>
-void removeDuplicates(std::vector<T> &_vec) {
+void removeDuplicates(std::vector<T> &_vec)
+{
     std::sort(_vec.begin(), _vec.end());
-
     typename std::vector<T>::iterator itr = std::unique(_vec.begin(), _vec.end());
     _vec.erase(itr, _vec.end());
 }
